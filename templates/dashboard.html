@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="content-header">
+    <h2>Analytics Dashboard</h2>
+    <p>Insights into your daily routines and habits.</p>
+</div>
+
+<div id="loading" class="text-center" style="padding: 2rem;">Loading data...</div>
+
+<div id="dashboard-content" style="display: none;">
+    <!-- Key Stats -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <h3>Avg Productivity</h3>
+            <div class="stat-value" id="stat-productivity">-</div>
+        </div>
+        <div class="stat-card">
+            <h3>Avg Energy</h3>
+            <div class="stat-value" id="stat-energy">-</div>
+        </div>
+        <div class="stat-card">
+            <h3>Total Tracked Hours</h3>
+            <div class="stat-value" id="stat-hours">-</div>
+        </div>
+    </div>
+
+    <!-- Charts -->
+    <div class="charts-grid">
+        <div class="chart-card">
+            <h3>Time Spent per Activity</h3>
+            <canvas id="activityChart"></canvas>
+        </div>
+        <div class="chart-card">
+            <h3>Category Distribution</h3>
+            <canvas id="categoryChart"></canvas>
+        </div>
+        <div class="chart-card full-width">
+            <h3>Average Productivity vs Time of Day</h3>
+            <canvas id="productivityChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Insights Section -->
+    <div class="content-header" style="margin-top: 3rem;">
+        <h2>Automated Insights</h2>
+    </div>
+    <div class="card insights-card">
+        <ul id="insights-list" class="insights-list">
+            <!-- Insights will be injected here -->
+        </ul>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+{% endblock %}
