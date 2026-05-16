@@ -6,7 +6,7 @@ A smart productivity and habit-tracking application designed to help users organ
 
 ## 🌐 Live Demo
 
-🔗 https://username.github.io/repository-name/
+🔗 https://routine-optimizer-1.onrender.com
 ---
 
 ## 🚀 Features
@@ -31,7 +31,17 @@ A smart productivity and habit-tracking application designed to help users organ
 
 ## 📸 Screenshots
 
-<img width="100%" alt="App Screenshot" src="YOUR_SCREENSHOT_LINK">
+<img width="1775" height="866" alt="image" src="https://github.com/user-attachments/assets/943c22a1-07d1-4e07-8047-04d6ae8f8ab2" />
+
+<img width="1741" height="772" alt="image" src="https://github.com/user-attachments/assets/08db2822-407f-4042-b4ab-826818e9cd4d" />
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork this repository and submit a pull request.
+
+---
 
 
 
